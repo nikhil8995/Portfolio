@@ -64,10 +64,14 @@ export default function AIChatWidget({ compact = false }) {
   ])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
+  const messagesRef = useRef(null)
   const bottomRef = useRef(null)
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
+    const container = messagesRef.current
+    if (!container) return
+
+    container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' })
   }, [messages, loading])
 
   const send = async (text) => {
@@ -124,7 +128,7 @@ export default function AIChatWidget({ compact = false }) {
       </div>
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto px-4 py-2 space-y-3 scrollbar-thin">
+      <div ref={messagesRef} className="flex-1 overflow-y-auto px-4 py-2 space-y-3 scrollbar-thin">
         <AnimatePresence initial={false}>
           {messages.map((msg, i) => (
             <motion.div
