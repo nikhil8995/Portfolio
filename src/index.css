@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-void-950 text-void-100 font-body antialiased overflow-x-hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-void-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #00f5ff66;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00f5ffaa;
+  }
+
+  .light body {
+    @apply bg-void-50 text-void-900;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-void-800/40 backdrop-blur-md border border-void-700/50;
+  }
+
+  .glass-light {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+
+  .neon-text {
+    color: #00f5ff;
+    text-shadow: 0 0 10px #00f5ff66, 0 0 20px #00f5ff33;
+  }
+
+  .neon-border {
+    border-color: #00f5ff44;
+    box-shadow: 0 0 10px #00f5ff22, inset 0 0 10px #00f5ff11;
+  }
+
+  .neon-btn {
+    @apply relative overflow-hidden bg-transparent border border-neon-cyan/50 text-neon-cyan font-mono text-sm px-6 py-3 transition-all duration-300;
+  }
+
+  .neon-btn::before {
+    content: '';
+    @apply absolute inset-0 bg-neon-cyan/10 opacity-0 transition-opacity duration-300;
+  }
+
+  .neon-btn:hover::before {
+    @apply opacity-100;
+  }
+
+  .neon-btn:hover {
+    @apply border-neon-cyan shadow-[0_0_20px_#00f5ff44];
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(0, 245, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 245, 255, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .section-title {
+    @apply font-display font-bold text-3xl md:text-4xl text-white mb-2;
+  }
+
+  .tag-pill {
+    @apply font-mono text-xs px-2 py-1 rounded border text-neon-cyan/80 border-neon-cyan/30 bg-neon-cyan/5;
+  }
+}
+
+.typing-cursor::after {
+  content: '|';
+  animation: blink 1s step-end infinite;
+  color: #00f5ff;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.light-mode {
+  @apply bg-void-50;
+}
+
+.light-mode body {
+  @apply bg-slate-50 text-slate-900;
+}
