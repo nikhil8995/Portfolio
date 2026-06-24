@@ -71,15 +71,16 @@ export default function Hero() {
 
             {/* Bio */}
             <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7 }}
-              className="text-void-300 text-base leading-relaxed max-w-md"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7 }}
+            className="text-void-300 text-base leading-relaxed max-w-md"
             >
-              Building production-grade systems at the intersection of{' '}
-              <span className="text-neon-cyan/80">AI/ML</span> and{' '}
-              <span className="text-neon-cyan/80">software engineering</span>.
-              From NLP pipelines to DevOps infrastructure — I ship things that scale.
+            Building intelligent applications with{' '}
+            <span className="text-neon-cyan/80">AI/ML</span>,{' '}
+            <span className="text-neon-cyan/80">full-stack development</span>, and
+            data-driven insights. Passionate about creating practical solutions through
+            software engineering, analytics, and continuous learning.
             </motion.p>
 
             {/* CTA buttons */}
