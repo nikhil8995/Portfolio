@@ -6,9 +6,9 @@ import AIChatWidget from './AIChatWidget'
 const phrases = [
   'Software Engineer',
   'AI/ML Engineer',
-  'DevOps Practitioner',
   'Full-Stack Developer',
-  'NLP Enthusiast',
+  'Data Science Enthusiast',
+  'Computer Engineering Student',
 ]
 
 export default function Hero() {
@@ -98,7 +98,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="https://github.com"
+                href="https://github.com/nikhil8995"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 font-mono text-sm px-5 py-3 rounded-lg bg-void-800/60 text-void-200 border border-void-700/60 hover:border-void-500 hover:text-white transition-all duration-200"
@@ -108,7 +108,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/nikhil-gaitonde-3b5a60353/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 font-mono text-sm px-5 py-3 rounded-lg bg-void-800/60 text-void-200 border border-void-700/60 hover:border-void-500 hover:text-white transition-all duration-200"
@@ -127,7 +127,7 @@ export default function Hero() {
             >
               {[
                 ['3+', 'Projects'],
-                ['4', 'Certifications'],
+                ['4+', 'Certifications'],
               ].map(([num, label]) => (
                 <div key={label}>
                   <div className="font-display font-bold text-2xl text-neon-cyan">

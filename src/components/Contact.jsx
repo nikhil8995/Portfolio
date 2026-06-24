@@ -53,18 +53,17 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'nikhilgaitonde8995@gmail.com',
-      href: 'mailto:nikhilgaitonde8995@gmail.com',
       color: 'text-neon-cyan',
     },
     {
       icon: GitBranch,
-      label: 'github.com/nikhil8995',
+      label: 'Github',
       href: 'https://github.com/nikhil8995',
       color: 'text-white',
     },
     {
       icon: Link2,
-      label: 'linkedin.com/in/nikhil-gaitonde-3b5a60353',
+      label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/nikhil-gaitonde-3b5a60353/',
       color: 'text-blue-400',
     },
@@ -103,7 +102,7 @@ export default function Contact() {
 
             <div className="flex items-center gap-2 font-mono text-xs text-void-500">
               <MapPin size={12} className="text-neon-cyan/60" />
-              India · Open to relocation
+              Mumbai, India
             </div>
 
             <div className="space-y-3">
@@ -190,7 +189,7 @@ export default function Contact() {
                   onChange={(e) =>
                     setForm({ ...form, message: e.target.value })
                   }
-                  placeholder="What are you building?"
+                  placeholder="Let's connect."
                   required
                   className="w-full bg-void-900/60 border border-void-700/60 rounded-xl px-4 py-2.5 font-mono text-sm text-void-200 placeholder-void-600 focus:outline-none focus:border-neon-cyan/40 transition-all duration-200 resize-none"
                 />

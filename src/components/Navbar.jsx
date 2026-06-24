@@ -61,22 +61,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Controls */}
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => setIsDark(!isDark)}
-            className="p-2 rounded-lg text-void-400 hover:text-neon-cyan hover:bg-neon-cyan/5 transition-all duration-200"
-            aria-label="Toggle theme"
-          >
-            {isDark ? <Sun size={16} /> : <Moon size={16} />}
-          </button>
-          <button
-            onClick={() => setOpen(!open)}
-            className="md:hidden p-2 rounded-lg text-void-400 hover:text-neon-cyan transition-all duration-200"
-          >
-            {open ? <X size={18} /> : <Menu size={18} />}
-          </button>
-        </div>
+
       </div>
 
       {/* Mobile menu */}

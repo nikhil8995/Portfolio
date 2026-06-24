@@ -40,12 +40,51 @@ export const projects = [
 ]
 
 export const skills = {
-  'Languages': ['Python', 'Java', 'C', 'JavaScript', 'TypeScript', 'SQL'],
-  'AI / ML': ['PyTorch', 'Scikit-learn', 'LLM API Integration'],
-  'Web': ['React', 'FastAPI', 'Node.js', 'REST APIs', 'Next.js'],
-  'DevOps': ['Docker', 'Jenkins', 'Ansible', 'GitHub Actions'],
-  'Data': ['PostgreSQL', 'Redis', 'MongoDB', 'Pandas', 'NumPy', 'D3.js', 'Hadoop'],
-  'Tools': ['Git', 'SonarQube', 'VS Code'],
+  'Languages': [
+    'Python',
+    'Java',
+    'C',
+    'C++',
+    'JavaScript',
+    'SQL'
+  ],
+
+  'AI / ML': [
+    'Scikit-learn',
+    'Pandas',
+    'NumPy',
+    'Matplotlib',
+    'Streamlit'
+  ],
+
+  'Web': [
+    'React',
+    'Flask',
+    'Node.js',
+    'Express.js',
+    'REST APIs'
+  ],
+
+  'DevOps': [
+  'Docker',
+  'Jenkins',
+  'Ansible',
+  'GitHub Actions'
+],
+
+  'Data': [
+    'MySQL',
+    'PostgreSQL',
+    'Pandas',
+    'NumPy',
+    'Data Visualization'
+  ],
+
+  'Tools': [
+    'Git',
+    'VS Code',
+    'VirtualBox'
+  ]
 }
 
 
@@ -75,7 +114,6 @@ export const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Experience', href: '#experience' },
   { label: 'Certifications', href: '#certifications' },
   { label: 'AI Assistant', href: '#ai-assistant' },
   { label: 'Contact', href: '#contact' },

@@ -3,12 +3,42 @@ import { motion, useInView } from 'framer-motion'
 import { skills } from '../data/portfolio'
 
 const categoryColors = {
-  'Languages':  { text: 'text-neon-cyan',   border: 'border-neon-cyan/30',   bg: 'bg-neon-cyan/5' },
-  'AI / ML':    { text: 'text-neon-purple',  border: 'border-neon-purple/30', bg: 'bg-neon-purple/5' },
-  'Web':        { text: 'text-blue-400',     border: 'border-blue-400/30',    bg: 'bg-blue-400/5' },
-  'DevOps':     { text: 'text-neon-green',   border: 'border-neon-green/30',  bg: 'bg-neon-green/5' },
-  'Data':       { text: 'text-neon-orange',  border: 'border-neon-orange/30', bg: 'bg-neon-orange/5' },
-  'Tools':      { text: 'text-void-300',     border: 'border-void-600/40',    bg: 'bg-void-700/20' },
+  'Languages': {
+    text: 'text-neon-cyan',
+    border: 'border-neon-cyan/30',
+    bg: 'bg-neon-cyan/5',
+    dot: 'bg-neon-cyan',
+  },
+  'AI / ML': {
+    text: 'text-neon-purple',
+    border: 'border-neon-purple/30',
+    bg: 'bg-neon-purple/5',
+    dot: 'bg-neon-purple',
+  },
+  'Web': {
+    text: 'text-blue-400',
+    border: 'border-blue-400/30',
+    bg: 'bg-blue-400/5',
+    dot: 'bg-blue-400',
+  },
+  'DevOps': {
+    text: 'text-neon-green',
+    border: 'border-neon-green/30',
+    bg: 'bg-neon-green/5',
+    dot: 'bg-neon-green',
+  },
+  'Data': {
+    text: 'text-neon-orange',
+    border: 'border-neon-orange/30',
+    bg: 'bg-neon-orange/5',
+    dot: 'bg-neon-orange',
+  },
+  'Tools': {
+    text: 'text-void-300',
+    border: 'border-void-600/40',
+    bg: 'bg-void-700/20',
+    dot: 'bg-void-300',
+  },
 }
 
 export default function Skills() {
@@ -41,7 +71,7 @@ export default function Skills() {
                 className="glass rounded-2xl p-5 group hover:border-void-600/70 transition-all duration-300"
               >
                 <div className="flex items-center gap-2 mb-4">
-                  <div className={`w-1.5 h-4 rounded-full ${colors.text.replace('text-', 'bg-')}`} style={{ opacity: 0.7 }} />
+                  <div className={`w-1.5 h-4 rounded-full ${colors.dot}`} style={{ opacity: 0.7 }} />
                   <span className={`font-mono text-xs font-semibold ${colors.text}`}>{category}</span>
                 </div>
                 <div className="flex flex-wrap gap-2">

@@ -4,10 +4,26 @@ import { useRef } from 'react'
 import { Code2, Brain, Rocket, Coffee } from 'lucide-react'
 
 const traits = [
-  { icon: Brain, label: 'AI / ML Engineer', desc: 'NLP pipelines, semantic search, LLM applications built for production.' },
-  { icon: Code2, label: 'Full-Stack Dev', desc: 'React frontends, FastAPI backends, end-to-end product ownership.' },
-  { icon: Rocket, label: 'DevOps Practitioner', desc: 'CI/CD pipelines, container orchestration, infra automation.' },
-  { icon: Coffee, label: 'Open Source Fan', desc: 'Arch Linux, Hyprland, Neovim. Terminal-first workflow.' },
+  {
+    icon: Brain,
+    label: 'AI / ML Engineer',
+    desc: 'Machine learning, predictive modeling, and intelligent applications.'
+  },
+  {
+    icon: Code2,
+    label: 'Full-Stack Developer',
+    desc: 'Building responsive frontends and scalable backend systems.'
+  },
+  {
+    icon: Rocket,
+    label: 'Data Science & IV',
+    desc: 'Analytics, visualization, and transforming data into insights.'
+  },
+  {
+    icon: Coffee,
+    label: 'DevOps Enthusiast',
+    desc: 'Docker, Linux, deployment workflows, and system automation.'
+  },
 ]
 
 export default function About() {
@@ -38,27 +54,39 @@ export default function About() {
             className="lg:col-span-3 space-y-4 text-void-300 leading-relaxed"
           >
             <p>
-              I'm a software engineer with a focus on building{' '}
-              <span className="text-white font-medium">intelligent systems</span> that solve real problems at scale.
-              My work sits at the intersection of machine learning, NLP, and modern software engineering.
-            </p>
-            <p>
-              I've shipped NLP pipelines for industrial procurement automation, designed DevOps infrastructure
-              that runs microservices in production, and built AI-powered content tools processing tens of thousands
-              of data points daily. I care about code that's{' '}
-              <span className="text-neon-cyan/80">maintainable, observable, and fast</span>.
-            </p>
-            <p>
-              Outside of work I run Arch Linux with Hyprland, contribute to open source tools,
-              and obsess over clean terminal setups. I believe good tooling makes better engineers.
-            </p>
+            I'm a software engineer with a focus on building{' '}
+            <span className="text-white font-medium">intelligent and data-driven systems</span>{' '}
+            that solve real-world problems. My interests span machine learning,
+            data science, information visualization, and modern software engineering.
+          </p>
+
+          <p>
+            I've developed full-stack web applications, built machine learning models
+            for predictive analytics, and worked with databases, backend systems, and
+            cloud-native tools. I enjoy turning complex data into{' '}
+            <span className="text-neon-cyan/80">actionable insights, scalable applications, and meaningful solutions</span>.
+          </p>
+
+          <p>
+            Outside of academics, I enjoy exploring new technologies, working on
+            personal projects, and continuously improving my engineering skills.
+            Whether it's software development, AI/ML, data analytics, or system design,
+            I'm always looking for opportunities to learn and build.
+          </p>
 
             {/* Tech highlights */}
             <div className="flex flex-wrap gap-2 pt-2">
-              {['Python', 'React', 'FastAPI', 'HuggingFace', 'Docker', 'PostgreSQL'].map((t) => (
-                <span key={t} className="tag-pill">{t}</span>
-              ))}
-            </div>
+            {[
+              'Python',
+              'React',
+              'Scikit-Learn',
+              'Docker',
+              'PostgreSQL',
+              'Data Visualization'
+            ].map((t) => (
+              <span key={t} className="tag-pill">{t}</span>
+            ))}
+          </div>
           </motion.div>
 
           {/* Trait cards */}

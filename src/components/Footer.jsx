@@ -10,14 +10,13 @@ export default function Footer() {
         </div>
 
         <p className="font-mono text-xs text-void-500">
-          Built with React + Vite + Framer Motion
+          Thank You for visiting my portfolio! Feel free to reach out via email or connect with me on GitHub and LinkedIn.
         </p>
 
         <div className="flex items-center gap-4">
           {[
-            { icon: GitBranch, href: 'https://github.com' },
-            { icon: Link2, href: 'https://linkedin.com' },
-            { icon: Mail, href: 'mailto:nikhil@example.com' },
+            { icon: GitBranch, href: 'https://github.com/nikhil8995' },
+            { icon: Link2, href: 'https://www.linkedin.com/in/nikhil-gaitonde-3b5a60353/' },
           ].map(({ icon: Icon, href }) => (
             <a
               key={href}
